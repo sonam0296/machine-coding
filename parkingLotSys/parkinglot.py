@@ -4,7 +4,6 @@ class Vehicle:
         self.registration_number = registration_number
         self.color = color
 
-
 class ParkingSlot:
     def __init__(self, slot_type, floor_number, slot_number):
         self.slot_type = slot_type
@@ -13,12 +12,10 @@ class ParkingSlot:
         self.floor_number = floor_number
         self.slot_number = slot_number
 
-
 class ParkingFloor:
     def __init__(self, floor_number, slots):
         self.floor_number = floor_number
         self.slots = slots
-
 
 class ParkingLot:
     def __init__(self):
@@ -45,7 +42,6 @@ class ParkingLot:
             return ticket_id
         else:
             return None
-
     def unpark_vehicle(self, ticket_id):
         for floor in self.floors:
             for slot in floor.slots:
@@ -55,7 +51,6 @@ class ParkingLot:
                     slot.vehicle = None
                     return vehicle
         return None
-
     def get_free_slots_per_floor(self, vehicle_type):
         free_slots_per_floor = {}
         for floor in self.floors:

@@ -1,5 +1,5 @@
 import sys
-sys.path.append('/Users/sonamjha/sonam_project/python_projects/machine_coding')
+sys.path.append('/Users/sonamjha/sonam_project/machine_coding')
 from parkingLotSys.parkinglot import ParkingLot, ParkingFloor, ParkingSlot
 
 def main():
